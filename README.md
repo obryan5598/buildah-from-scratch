@@ -18,6 +18,8 @@ gcc -o helloworld hello.c
 ```
 
 ## Build the image with the compiled binary
+Execution must be run in rootless mode invoking
+the unshare command, like the example below:
 ```bash
 buildah unshare bash build-helloworld-c-container.sh
 ```
